@@ -1,8 +1,10 @@
-import React from 'react'
 
-const About = () => {
+import  React, {useContext}  from 'react'
+ 
+ const About = () => {
+  
   return (
-    <div>About</div>
+    <div>About </div>
   )
 }
 

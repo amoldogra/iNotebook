@@ -8,14 +8,15 @@ import {
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
-import noteState from './context/notes/noteState';
+import NoteState from './context/notes/NoteState';
 
 function App() {
   return (
     <>
-    <noteState>
+    <NoteState>
     <Router>
      <Navbar/>
+     <div className= "container">
      <Switch>
           <Route exact path="/">
             <Home />
@@ -24,8 +25,9 @@ function App() {
             <About />
           </Route>
         </Switch>
+        </div>
      </Router>
-     </noteState>
+     </NoteState>
       </>
   );
 }
